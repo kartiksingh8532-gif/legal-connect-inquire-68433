@@ -20,13 +20,13 @@ export const Footer = () => {
     <footer className="bg-black text-white py-16 font-serif">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-          {/* Logo and Company Info */}
+          {/* Company Info */}
           <div className="bg-white text-black p-6 lg:p-8 rounded-lg">
             <div className="flex flex-col sm:flex-row items-center justify-center mb-6">
               <div className="w-32 h-32 lg:w-40 lg:h-40 bg-white rounded-full flex items-center justify-center mb-4 sm:mb-0 sm:mr-6 border-2 border-black flex-shrink-0">
                 <img 
                   src="https://static.wixstatic.com/media/111838_735d82c5c92e4a32bd74ce8a4b7a5162~mv2.png/v1/fill/w_297,h_297,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/WhatsApp%20Image%202025-02-26%20at%2020_34_edited.png"
-                  alt="Virtuous Law Partners Logo"
+                  alt="Virtuous Law Partners"
                   className="w-28 h-28 lg:w-36 lg:h-36 object-contain"
                 />
               </div>

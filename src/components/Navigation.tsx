@@ -35,12 +35,12 @@ export const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b-2 border-black font-serif">
       <div className="container mx-auto px-2 sm:px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+          {/* Brand */}
           <Link to="/" className="flex items-center space-x-2 min-w-0 flex-shrink-0">
             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center border-2 border-black flex-shrink-0">
               <img 
                 src="http://static.wixstatic.com/media/111838_f8741bf659844bd38fba92837dea873d~mv2.png/v1/fill/w_66,h_73,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/WhatsApp%20Image%202025-02-26%20at%2020_edited.png" 
-                alt="Virtuous Law Partners Logo" 
+                alt="Virtuous Law Partners" 
                 className="w-6 h-7 sm:w-8 sm:h-9 object-contain"
               />
             </div>

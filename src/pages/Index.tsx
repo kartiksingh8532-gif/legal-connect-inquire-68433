@@ -49,7 +49,7 @@ const Index = () => {
             <div className="w-32 h-32 mx-auto mb-6 bg-white rounded-full flex items-center justify-center">
               <img 
                 src="http://static.wixstatic.com/media/111838_f8741bf659844bd38fba92837dea873d~mv2.png/v1/fill/w_66,h_73,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/WhatsApp%20Image%202025-02-26%20at%2020_edited.png" 
-                alt="Virtuous Law Partners Logo" 
+                alt="Virtuous Law Partners" 
                 className="w-16 h-20 object-contain"
               />
             </div>
