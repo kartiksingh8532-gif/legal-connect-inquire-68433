@@ -8,6 +8,19 @@ import { MessageCircle, Phone, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import servicesData from "@/data/services.json";
 
+// Import service images
+import criminalLitigation from "@/assets/criminal-litigation.jpg";
+import civilCommercial from "@/assets/civil-commercial.jpg";
+import consumerDisputes from "@/assets/consumer-disputes.jpg";
+import familyDisputes from "@/assets/family-disputes.jpg";
+import debtRecovery from "@/assets/debt-recovery.jpg";
+import arbitration from "@/assets/arbitration.jpg";
+import realEstate from "@/assets/real-estate.jpg";
+import trademarkCopyright from "@/assets/trademark-copyright.jpg";
+import proBono from "@/assets/pro-bono.jpg";
+import developmentAuthorities from "@/assets/development-authorities.jpg";
+import propertyTitleSearch from "@/assets/property-title-search.jpg";
+
 const ServicePage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -34,6 +47,23 @@ const ServicePage = () => {
 
   const handleCallClick = () => {
     window.open("tel:+919315788388", '_self');
+  };
+
+  const getServiceImage = (id: string) => {
+    const imageMap: { [key: string]: string } = {
+      'criminal-litigation': criminalLitigation,
+      'civil-commercial-litigation': civilCommercial,
+      'consumer-disputes': consumerDisputes,
+      'family-disputes': familyDisputes,
+      'debt-recovery': debtRecovery,
+      'arbitration': arbitration,
+      'real-estate-matters': realEstate,
+      'trademark-copyright': trademarkCopyright,
+      'pro-bono-matters': proBono,
+      'development-authorities': developmentAuthorities,
+      'property-title-search': propertyTitleSearch,
+    };
+    return imageMap[id] || criminalLitigation;
   };
 
   if (!service) {
@@ -69,7 +99,7 @@ const ServicePage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <img
-                src={service.image}
+                src={getServiceImage(service.id)}
                 alt={service.title}
                 className="w-full h-64 object-cover rounded-lg shadow-lg mb-8"
               />

@@ -8,6 +8,18 @@ import { MessageCircle, Calendar, User, Tag, ArrowLeft, Phone } from "lucide-rea
 import { Button } from "@/components/ui/button";
 import blogsData from "@/data/blogs.json";
 
+// Import blog images
+import blogUmarKhalid from "@/assets/blog-umar-khalid.jpg";
+import blogStrayDogs from "@/assets/blog-stray-dogs.jpg";
+import blogRtiAct from "@/assets/blog-rti-act.jpg";
+import blogPoshAct from "@/assets/blog-posh-act.jpg";
+import blogGstLaw from "@/assets/blog-gst-law.jpg";
+import blogCyberLaw from "@/assets/blog-cyber-law.jpg";
+import blogEnvironmentalLaw from "@/assets/blog-environmental-law.jpg";
+import blogLabourLaw from "@/assets/blog-labour-law.jpg";
+import blogBankingLaw from "@/assets/blog-banking-law.jpg";
+import blogConstitutionalRemedies from "@/assets/blog-constitutional-remedies.jpg";
+
 const BlogPost = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const { id } = useParams();
@@ -22,6 +34,22 @@ const BlogPost = () => {
 
   const handleCallClick = () => {
     window.open("tel:+919315788388", '_self');
+  };
+
+  const getBlogImage = (id: string) => {
+    const imageMap: { [key: string]: string } = {
+      'umar-khalid-uapa': blogUmarKhalid,
+      'delhi-stray-dogs': blogStrayDogs,
+      'rti-act-guide': blogRtiAct,
+      'posh-act-compliance': blogPoshAct,
+      'gst-law-basics': blogGstLaw,
+      'cyber-law-india': blogCyberLaw,
+      'environmental-law': blogEnvironmentalLaw,
+      'labour-law-rights': blogLabourLaw,
+      'banking-law': blogBankingLaw,
+      'constitutional-remedies': blogConstitutionalRemedies,
+    };
+    return imageMap[id] || blogUmarKhalid;
   };
 
   if (!blog) {
@@ -78,7 +106,7 @@ const BlogPost = () => {
           <div className="max-w-4xl mx-auto">
             <div className="mb-12">
               <img
-                src={blog.image}
+                src={getBlogImage(blog.id)}
                 alt={blog.title}
                 className="w-full h-96 object-cover rounded-lg shadow-2xl"
               />

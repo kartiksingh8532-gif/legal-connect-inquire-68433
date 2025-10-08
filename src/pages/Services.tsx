@@ -9,6 +9,19 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import servicesData from "@/data/services.json";
 
+// Import service images
+import criminalLitigation from "@/assets/criminal-litigation.jpg";
+import civilCommercial from "@/assets/civil-commercial.jpg";
+import consumerDisputes from "@/assets/consumer-disputes.jpg";
+import familyDisputes from "@/assets/family-disputes.jpg";
+import debtRecovery from "@/assets/debt-recovery.jpg";
+import arbitration from "@/assets/arbitration.jpg";
+import realEstate from "@/assets/real-estate.jpg";
+import trademarkCopyright from "@/assets/trademark-copyright.jpg";
+import proBono from "@/assets/pro-bono.jpg";
+import developmentAuthorities from "@/assets/development-authorities.jpg";
+import propertyTitleSearch from "@/assets/property-title-search.jpg";
+
 const Services = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [isContactOpen, setIsContactOpen] = useState(false);
@@ -50,6 +63,23 @@ const Services = () => {
     }
   };
 
+  const getServiceImage = (id: string) => {
+    const imageMap: { [key: string]: string } = {
+      'criminal-litigation': criminalLitigation,
+      'civil-commercial-litigation': civilCommercial,
+      'consumer-disputes': consumerDisputes,
+      'family-disputes': familyDisputes,
+      'debt-recovery': debtRecovery,
+      'arbitration': arbitration,
+      'real-estate-matters': realEstate,
+      'trademark-copyright': trademarkCopyright,
+      'pro-bono-matters': proBono,
+      'development-authorities': developmentAuthorities,
+      'property-title-search': propertyTitleSearch,
+    };
+    return imageMap[id] || criminalLitigation;
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -78,7 +108,7 @@ const Services = () => {
                 >
                   <div className="h-48 overflow-hidden">
                     <img
-                      src={service.image}
+                      src={getServiceImage(service.id)}
                       alt={service.title}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />

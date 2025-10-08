@@ -6,11 +6,39 @@ import { ContactButtons } from "@/components/ContactButtons";
 import { Link } from "react-router-dom";
 import blogsData from "@/data/blogs.json";
 
+// Import blog images
+import blogUmarKhalid from "@/assets/blog-umar-khalid.jpg";
+import blogStrayDogs from "@/assets/blog-stray-dogs.jpg";
+import blogRtiAct from "@/assets/blog-rti-act.jpg";
+import blogPoshAct from "@/assets/blog-posh-act.jpg";
+import blogGstLaw from "@/assets/blog-gst-law.jpg";
+import blogCyberLaw from "@/assets/blog-cyber-law.jpg";
+import blogEnvironmentalLaw from "@/assets/blog-environmental-law.jpg";
+import blogLabourLaw from "@/assets/blog-labour-law.jpg";
+import blogBankingLaw from "@/assets/blog-banking-law.jpg";
+import blogConstitutionalRemedies from "@/assets/blog-constitutional-remedies.jpg";
+
 const Blog = () => {
   useEffect(() => {
     // Scroll to top when page loads
     window.scrollTo(0, 0);
   }, []);
+
+  const getBlogImage = (id: string) => {
+    const imageMap: { [key: string]: string } = {
+      'umar-khalid-uapa': blogUmarKhalid,
+      'delhi-stray-dogs': blogStrayDogs,
+      'rti-act-guide': blogRtiAct,
+      'posh-act-compliance': blogPoshAct,
+      'gst-law-basics': blogGstLaw,
+      'cyber-law-india': blogCyberLaw,
+      'environmental-law': blogEnvironmentalLaw,
+      'labour-law-rights': blogLabourLaw,
+      'banking-law': blogBankingLaw,
+      'constitutional-remedies': blogConstitutionalRemedies,
+    };
+    return imageMap[id] || blogUmarKhalid;
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -33,7 +61,7 @@ const Blog = () => {
             {blogsData.blogs.map((blog) => (
               <div key={blog.id} className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-gray-200 hover:border-amber-600 transition-colors">
                 <img 
-                  src={blog.image} 
+                  src={getBlogImage(blog.id)} 
                   alt={blog.title}
                   className="w-full h-48 object-cover"
                 />
