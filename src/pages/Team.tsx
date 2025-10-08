@@ -70,20 +70,6 @@ const Team = () => {
     }
   ];
 
-  const paralegalMembers = [
-    {
-      name: "Vineet Kumar",
-      image: "/lovable-uploads/ccc30fb9-e85b-41fb-b508-ad8b464edb61.png"
-    },
-    {
-      name: "Priyanshi Jadon",
-      image: "/lovable-uploads/aa812f1c-2d9a-4fe7-8328-2db823dffa78.png"
-    },
-    {
-      name: "Kartik Singh",
-      image: "/lovable-uploads/d908cd09-9b00-4e8f-86e3-4b787ec628ca.png"
-    }
-  ];
 
   const truncateText = (text: string, wordLimit: number = 20) => {
     const words = text.split(' ');
@@ -143,7 +129,6 @@ const Team = () => {
         <div className="container mx-auto px-4">
           <TeamSection title="PARTNERS" members={partners} />
           <TeamSection title="TEAM" members={teamMembers} />
-          <TeamSection title="PARALEGAL MEMBERS" members={paralegalMembers} showReadMore={false} />
         </div>
       </section>
 
