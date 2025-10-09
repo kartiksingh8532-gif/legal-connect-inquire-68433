@@ -9,14 +9,14 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import servicesData from "@/data/services.json";
 
-// Import service images
-import criminalLitigation from "@/assets/criminal-litigation.jpg";
-import civilCommercial from "@/assets/civil-commercial.jpg";
-import consumerDisputes from "@/assets/consumer-disputes.jpg";
-import familyDisputes from "@/assets/family-disputes.jpg";
+// Import service images - Indian law themed
+import criminalLitigation from "@/assets/criminal-litigation-new.jpg";
+import civilCommercial from "@/assets/civil-commercial-new.jpg";
+import consumerDisputes from "@/assets/consumer-disputes-new.jpg";
+import familyDisputes from "@/assets/family-disputes-new.jpg";
 import debtRecovery from "@/assets/debt-recovery.jpg";
-import arbitration from "@/assets/arbitration.jpg";
-import realEstate from "@/assets/real-estate.jpg";
+import arbitration from "@/assets/arbitration-new.jpg";
+import realEstate from "@/assets/real-estate-new.jpg";
 import trademarkCopyright from "@/assets/trademark-copyright.jpg";
 import proBono from "@/assets/pro-bono.jpg";
 import developmentAuthorities from "@/assets/development-authorities.jpg";

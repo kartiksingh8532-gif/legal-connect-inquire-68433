@@ -46,11 +46,11 @@ const Index = () => {
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <div className="mb-8">
-            <div className="w-32 h-32 mx-auto mb-6 bg-white rounded-full flex items-center justify-center">
+            <div className="w-48 h-48 mx-auto mb-6 bg-white rounded-full flex items-center justify-center">
               <img 
                 src="http://static.wixstatic.com/media/111838_f8741bf659844bd38fba92837dea873d~mv2.png/v1/fill/w_66,h_73,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/WhatsApp%20Image%202025-02-26%20at%2020_edited.png" 
                 alt="Virtuous Law Partners" 
-                className="w-16 h-20 object-contain"
+                className="w-32 h-36 object-contain"
               />
             </div>
           </div>
