@@ -13,15 +13,11 @@ const Index = () => {
   const [showContactButtons, setShowContactButtons] = useState(false);
 
   useEffect(() => {
-    // Check if user has already accepted terms
-    const hasAcceptedTerms = localStorage.getItem('vlp-terms-accepted');
-    if (!hasAcceptedTerms) {
-      setShowTerms(true);
-    }
+    // Show terms modal every time the page loads
+    setShowTerms(true);
   }, []);
 
   const handleAcceptTerms = () => {
-    localStorage.setItem('vlp-terms-accepted', 'true');
     setShowTerms(false);
   };
 
