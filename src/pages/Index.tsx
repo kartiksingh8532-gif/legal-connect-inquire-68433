@@ -70,13 +70,13 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold mb-6 text-slate-800">About Virtuous Law Partners</h2>
-              <p className="text-gray-600 mb-6 leading-relaxed text-lg">
+              <p className="text-gray-600 mb-6 leading-relaxed text-lg text-justify">
                 At Virtuous Law Partners (VLP), we go beyond traditional legal practice to craft tailored legal solutions for businesses and individuals across Delhi NCR. As a registered law firm in India with expert legal consultants and top advocates in Delhi, our mission is to empower you to navigate complex legal matters including civil litigation, criminal defense, family law disputes, corporate legal services, property disputes, and debt recovery with confidence and clarity.
               </p>
-              <p className="text-gray-600 mb-6 leading-relaxed text-lg">
+              <p className="text-gray-600 mb-6 leading-relaxed text-lg text-justify">
                 Our foundation rests on excellence, integrity, and professionalism in legal representation. These core values drive every legal consultation, court appearance, and strategic decision we make. We recognize that every client's situation is unique, which is why our experienced legal team specializes in developing customized legal strategies for business law, consumer protection, arbitration services, real estate legal matters, and intellectual property rights designed to precisely meet your specific legal needs and objectives.
               </p>
-              <p className="text-gray-600 mb-6 leading-relaxed text-lg">
+              <p className="text-gray-600 mb-6 leading-relaxed text-lg text-justify">
                 What truly sets VLP apart as the best law firm in Delhi is our unwavering commitment to understanding your legal challenges. Our team of highly skilled advocates and legal experts in Delhi High Court, Supreme Court, and District Courts isn't just focused on winning cases; we provide affordable legal services, free legal consultation, 24/7 legal support, and emergency legal assistance. We leverage our deep expertise in Indian law, legal documentation, legal compliance, and litigation management to provide the highest level of legal representation, always striving for the best possible results in your civil cases, criminal cases, family matters, and corporate disputes.
               </p>
               <div className="space-y-4">
@@ -107,13 +107,13 @@ const Index = () => {
           <div className="mt-16 grid md:grid-cols-2 gap-12">
             <div className="bg-gray-50 p-8 rounded-lg">
               <h3 className="text-2xl font-bold mb-4 text-slate-800">Our Vision</h3>
-              <p className="text-gray-600 leading-relaxed text-lg">
+              <p className="text-gray-600 leading-relaxed text-lg text-justify">
                 At Virtuous Law Partners (VLP), our goal is simple: to be the leading and most respected law firm known for our exceptional legal skills, strong integrity, and deep dedication to our clients' success. We want to be the first choice for anyone – individuals or businesses – looking for smart and effective legal help. We aim to set the standard for excellent legal practice and client happiness.
               </p>
             </div>
             <div className="bg-gray-50 p-8 rounded-lg">
               <h3 className="text-2xl font-bold mb-4 text-slate-800">Our Mission</h3>
-              <p className="text-gray-600 leading-relaxed text-lg">
+              <p className="text-gray-600 leading-relaxed text-lg text-justify">
                 Our mission at VLP is to provide unwavering legal support that always puts you, the client, first. We stick to the highest standards of ethics and professionalism. We're committed to understanding your unique needs so we can deliver innovative, practical, and effective legal solutions. Our goal is to meet your objectives and even go beyond your expectations. We strive to be your trusted partner, giving you the confidence to handle any legal challenge.
               </p>
             </div>
