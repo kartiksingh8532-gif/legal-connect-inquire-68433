@@ -71,13 +71,13 @@ const Index = () => {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-slate-800">About Virtuous Law Partners</h2>
               <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-                At Virtuous Law Partners (VLP), we go beyond traditional legal practice to craft tailored solutions for businesses and individuals. As a registered law firm, our mission is to empower you to navigate the legal landscape with confidence and clarity.
+                At Virtuous Law Partners (VLP), we go beyond traditional legal practice to craft tailored legal solutions for businesses and individuals across Delhi NCR. As a registered law firm in India with expert legal consultants and top advocates in Delhi, our mission is to empower you to navigate complex legal matters including civil litigation, criminal defense, family law disputes, corporate legal services, property disputes, and debt recovery with confidence and clarity.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-                Our foundation rests on excellence, integrity, and professionalism. These core values aren't just abstract ideals; they are the driving force behind every interaction and strategic decision we make. We recognize that every client's situation is unique, which is why we specialize in developing customized legal strategies designed to precisely meet your specific needs and objectives.
+                Our foundation rests on excellence, integrity, and professionalism in legal representation. These core values drive every legal consultation, court appearance, and strategic decision we make. We recognize that every client's situation is unique, which is why our experienced legal team specializes in developing customized legal strategies for business law, consumer protection, arbitration services, real estate legal matters, and intellectual property rights designed to precisely meet your specific legal needs and objectives.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-                What truly sets VLP apart is our unwavering commitment to understanding your challenges and aspirations. Our team of highly skilled and experienced advocates isn't just focused on achieving favorable outcomes; we are dedicated to being your trusted advisors. We diligently leverage our deep legal knowledge to provide the highest level of representation and support, always striving for the best possible results on your behalf.
+                What truly sets VLP apart as the best law firm in Delhi is our unwavering commitment to understanding your legal challenges. Our team of highly skilled advocates and legal experts in Delhi High Court, Supreme Court, and District Courts isn't just focused on winning cases; we provide affordable legal services, free legal consultation, 24/7 legal support, and emergency legal assistance. We leverage our deep expertise in Indian law, legal documentation, legal compliance, and litigation management to provide the highest level of legal representation, always striving for the best possible results in your civil cases, criminal cases, family matters, and corporate disputes.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
