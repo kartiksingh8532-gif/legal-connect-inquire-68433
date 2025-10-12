@@ -10,12 +10,12 @@ import servicesData from "@/data/services.json";
 
 // Import service images - Indian law themed
 import criminalLitigation from "@/assets/criminal-litigation-new.jpg";
-import civilCommercial from "@/assets/civil-commercial-new.jpg";
+import civilCommercial from "@/assets/civil-commercial-indian.jpg";
 import consumerDisputes from "@/assets/consumer-disputes-new.jpg";
 import familyDisputes from "@/assets/family-disputes-new.jpg";
-import debtRecovery from "@/assets/debt-recovery.jpg";
+import debtRecovery from "@/assets/debt-recovery-indian.jpg";
 import arbitration from "@/assets/arbitration-new.jpg";
-import realEstate from "@/assets/real-estate-new.jpg";
+import realEstate from "@/assets/real-estate-indian.jpg";
 import trademarkCopyright from "@/assets/trademark-copyright.jpg";
 import proBono from "@/assets/pro-bono.jpg";
 import developmentAuthorities from "@/assets/development-authorities.jpg";
