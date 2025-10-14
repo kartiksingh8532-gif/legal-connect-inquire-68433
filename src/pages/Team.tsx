@@ -83,11 +83,11 @@ const Team = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {members.map((member, index) => (
           <div key={index} className="text-center bg-white rounded-lg shadow-lg p-6 border-2 border-gray-200 hover:border-amber-600 transition-colors">
-            <div className="w-32 h-40 mx-auto mb-6 rounded-lg overflow-hidden border-4 border-slate-200 shadow-lg">
+            <div className="w-48 h-56 mx-auto mb-6 rounded-lg overflow-hidden">
               <img 
                 src={member.image} 
                 alt={member.name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain bg-white"
               />
             </div>
             <h3 className="text-xl font-bold mb-4 text-slate-800">{member.name}</h3>
@@ -143,11 +143,11 @@ const Team = () => {
                 </DialogTitle>
               </DialogHeader>
               <div className="text-center">
-                <div className="w-32 h-40 mx-auto mb-6 rounded-lg overflow-hidden border-4 border-slate-200 shadow-lg">
+                <div className="w-48 h-56 mx-auto mb-6 rounded-lg overflow-hidden">
                   <img 
                     src={selectedMember.image} 
                     alt={selectedMember.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain bg-white"
                   />
                 </div>
                 <p className="text-gray-700 leading-relaxed text-base">
