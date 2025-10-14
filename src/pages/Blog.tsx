@@ -9,6 +9,8 @@ import blogsData from "@/data/blogs.json";
 // Import blog images
 import blogUmarKhalid from "@/assets/blog-uapa-bail-rights.jpg";
 import blogStrayDogs from "@/assets/blog-abc-rules-animal-welfare.jpg";
+import blogConsumerProtection from "@/assets/blog-consumer-protection.jpg";
+import blogPropertyDisputes from "@/assets/blog-property-disputes.jpg";
 import blogRtiAct from "@/assets/blog-rti-act.jpg";
 import blogPoshAct from "@/assets/blog-posh-act.jpg";
 import blogGstLaw from "@/assets/blog-gst-law.jpg";
@@ -26,8 +28,14 @@ const Blog = () => {
 
   const getBlogImage = (id: string) => {
     const imageMap: { [key: string]: string } = {
+      '1': blogUmarKhalid,
+      '2': blogStrayDogs,
+      '3': blogConsumerProtection,
+      '4': blogPropertyDisputes,
       'umar-khalid-uapa': blogUmarKhalid,
       'delhi-stray-dogs': blogStrayDogs,
+      'consumer-protection-act': blogConsumerProtection,
+      'property-disputes-india': blogPropertyDisputes,
       'rti-act-guide': blogRtiAct,
       'posh-act-compliance': blogPoshAct,
       'gst-law-basics': blogGstLaw,
