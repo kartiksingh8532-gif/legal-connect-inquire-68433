@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 import blogsData from "@/data/blogs.json";
 
 // Import blog images
-import blogUmarKhalid from "@/assets/blog-umar-khalid.jpg";
-import blogStrayDogs from "@/assets/blog-stray-dogs.jpg";
+import blogUmarKhalid from "@/assets/blog-uapa-law.jpg";
+import blogStrayDogs from "@/assets/blog-animal-rights-law.jpg";
 import blogRtiAct from "@/assets/blog-rti-act.jpg";
 import blogPoshAct from "@/assets/blog-posh-act.jpg";
 import blogGstLaw from "@/assets/blog-gst-law.jpg";
